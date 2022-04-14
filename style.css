@@ -1,0 +1,105 @@
+:root{
+    /* ### Primary */
+--Very-dark-blue: hsl(233, 47%, 7%);
+--Dark-desaturated-blue: hsl(244, 38%, 16%);
+--Soft-violet: hsl(277, 58%, 44%);
+/* ### Neutral */
+--White: hsl(0, 0%, 100%);
+--white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+--white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    /* font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif; */
+    font-size: 15px;
+    background: var(--Very-dark-blue);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--Dark-desaturated-blue);
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    padding: 0px 0px 0px 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 404px;
+    
+}
+
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        text-align:left ;
+        margin-right: 70px;
+        width: 460px;
+    }
+
+        .card-text-title{
+            font-family: 'Inter', sans-serif;
+            color: var(--White);
+            font-weight: 700;
+            font-size: 35px;
+            margin-top: 80px;
+        }
+        .card-text-title span{
+            color: hsl(277, 64%, 61%);
+        }
+
+        .card-text-descripcion{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            opacity: 0.8;
+            color: var(--white-stat-headings);
+            font-size: 16px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+
+
+        .img{
+            width: 489px;
+            background-color: var(--Soft-violet);
+        }
+        .img img{
+            width: 100%;
+            height: 410px;
+            position: relative;
+            opacity: 0.5;
+        }
+
+    .footer {
+        margin-top: 65px;
+        margin-right: 70px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+        .footer-social h3 {
+            font-family: 'Lexend Deca', sans-serif;
+            color: var(--white-main-paragraph);
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        .footer-social p {
+            /* font-family: 'Inter', sans-serif; */
+            font-family: 'Lexend Deca', sans-serif;
+            color: var(--white-stat-headings);
+            font-weight: 400;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2.7px;
+            margin-bottom: 23px;
+        }
